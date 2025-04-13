@@ -1,0 +1,6 @@
+header/Footer - #292c2e 
+Nav -
+nav hover - #808080
+page background - #fdfdf9
+text - black
+section - #fcfdf9

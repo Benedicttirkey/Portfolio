@@ -1,0 +1,325 @@
+body {
+    font-family: Calibri, sans-serif;
+    background-color: #fdfdf9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #292c2e;/* #57a93e*/
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+
+.img {
+    width: 200px;  /* Set a specific width */
+    height: 200px; /* Set a specific height to make it circular */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    scroll-margin-top: 80px; /* Adjust based on header height */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: #f4f3f1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    color: black
+}
+.experience-img {
+    width: 100%;  /* Adjust width */
+    max-width: 600px; /* Prevents it from getting too large */
+    display: block;
+    margin: 20px auto; /* Centers the image */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds depth */
+}
+.certificate-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+/*
+.certificate-box {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}*/
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    background: #292c2e;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fcfcfc;/*205072   007BFF*/
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: #808080;/*09D1C7   007BFF*/
+}
+
+main {
+    padding-top: 60px; /* Adjust based on header height */
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #292c2e; /*#57a93e;*/
+    color: white
+}
+
+/* HOME SECTION*/
+
+.home-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Responsive fallback */
+}
+
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.home-description {
+    flex: 1;
+    color: black;
+}
+
+.home-description h2 {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+.home-description p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+
+/* CERTIFICATE SECTION*/
+
+.certificate-box {
+    background: #fff;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.certificate-header {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between logo and title */
+    color: #040402;
+}
+
+.certificate-logo {
+    width: 50px; /* Adjust size */
+    height: 50px;
+    object-fit: contain;
+}
+
+.certificate-box h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.certificate-date {
+    font-size: 14px;
+    color: #555;
+    margin: 8px 0;
+}
+
+.certificate-button {
+    display: inline-block;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.certificate-button:hover {
+    background: #0056b3;
+}
+@media (max-width: 600px) {
+    .certificate-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .certificate-logo {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* PROJECT SECTION*/
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-box {
+    background: #fff;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between logo and title */
+}
+
+.project-logo {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.project-box h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.project-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-description {
+    font-size: 14px;
+    color: #555;
+    margin: 8px 0;
+}
+
+.project-button {
+    display: inline-block;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.project-button:hover {
+    background: #0056b3;
+}
+
+@media (max-width: 500px) {
+    .project-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project-logo {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (max-width: 768px) {
+    .project-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* CONTACT SECTION */
+.contact-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+}
+
+.contact-header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+.contact-links {
+    display: flex;
+    gap: 15px;
+}
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #0056b3;
+}
+
+.contact-icon {
+    width: 24px;
+    height: 24px;
+}
